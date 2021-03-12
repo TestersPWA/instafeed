@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<title>Page title</title>
+				
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.instagramFeed/3.0.3/jquery.instagramFeed.min.js"></script>
+			
+				
+</head>
+<body>
+
+<div id="feedy"></div>
+<br><br>
+<div id="data"></div>
+
+<script>
+
+
+        $(document).ready( function(){
+
+            $.instagramFeed({
+
+                'username': 'neilpatel',
+
+                'container': '#feedy'
+              })
+          })
+let data = document.getElementById("feedy").innerHTML;
+let dataDis = document.getElementById("data")
+dataDis.textContent = data;
+</script>
+</body>
+</html>
